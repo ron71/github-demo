@@ -96,4 +96,22 @@
 					|
 					|___This version of push command refer to the remote name that was automatically assigned by the repository
 							Here 'origin' refers to the github copy of the repository
-					
+	provide your Git UserName and password
+
+	
+**************************************************************************************
+# Adding git to existing project
+	1. Go to the project folder to add the '.git' repository folder
+		type: "git init"
+	2. We can check the addition by typing "ls -al" to print all the file and folder(Even hidden folders too)
+	3. Noe to add all the files in the staging area we will type:
+		'git add .'				// IMPORTANT
+	4.Then Commit : 'git commit -m "My first Commit"'
+
+# Pushing An existing repository
+	1. First create an empty repository at gitHub.(It would be better you create with same name as that of project). 
+	   Avoid initializing the repository with readme and all, iyt can be added later.
+	2. Copy the http url of the repository.
+	3. Now after commit in local repository od the system. To push it Type:
+		'git remote add origin <http URL>'
+		'git push -u origin master'
