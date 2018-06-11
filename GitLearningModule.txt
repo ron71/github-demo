@@ -75,4 +75,25 @@
 
 	
 # Committing at file
-	__ After saving the file in the local repository. We can check content of the file by using 'cat' command
+	__ After saving the file in the local repository. We can check content of the file by using 'cat' command in GIT BASH
+	__ Now we can add this to staging area using following
+		'git add <fileName>'
+		Now if we check status, we will observe that there is a change detected.
+	__ Now we can commit the file in the local repository. Type:
+		git commit -m "A commit message"
+	__ Now again on status check we can observe that working directory is clean now.
+		O/P-->
+		On branch master
+		Your branch is ahead of 'origin/master' by 1 commit.
+		(use "git push" to publish your local commits)
+
+		nothing to commit, working tree clean
+		
+# Pushing the commits to the git hub
+	Type: git push origin master
+					^		^
+					|		|__This is the name of the brach we pushed. Here 'master' refer to the default and ONLY branch in the repository.
+					|
+					|___This version of push command refer to the remote name that was automatically assigned by the repository
+							Here 'origin' refers to the github copy of the repository
+					
